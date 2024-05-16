@@ -1,0 +1,49 @@
+/* أنماط عامة */
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    background-color: #f4f4f9;
+    width: 100%; /* تأكد من أن الجسم يأخذ العرض الكامل */
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    margin: 20px auto;
+    width: 90%; /* تعديل العرض ليكون متجاوبًا */
+    max-width: 500px; /* العرض الأقصى للبطاقة */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+input, button {
+    font-size: 16px;
+    padding: 10px;
+    margin: 5px;
+    border: 2px solid #007BFF;
+    border-radius: 5px;
+    width: calc(100% - 30px); /* تعديل العرض ليكون متجاوبًا */
+}
+
+/* استعلامات الوسائط للشاشات الصغيرة */
+@media (max-width: 768px) {
+    .card {
+        width: 95%; /* زيادة العرض في الشاشات الصغيرة */
+        padding: 15px; /* تقليل التبطين */
+    }
+
+    input, button {
+        font-size: 14px; /* تصغير حجم الخط */
+        padding: 8px; /* تقليل التبطين */
+    }
+}
+
+/* استعلامات الوسائط للشاشات الكبيرة جدًا */
+@media (min-width: 1200px) {
+    .card {
+        max-width: 650px; /* زيادة العرض الأقصى للبطاقة */
+    }
+}

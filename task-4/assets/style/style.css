@@ -1,0 +1,128 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(120deg, #a1c4fd, #ff00f2 );
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-size: 200% 200%;
+    animation: gradientAnimation 5s ease infinite;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+    /* توسيع الهامش السفلي للعنوان */
+}
+
+label,
+button,
+input {
+    font-size: 16px;
+    padding: 10px;
+    margin: 10px 0;
+    /* توحيد الهوامش العلوية والسفلية */
+    width: 80%;
+    /* تعديل العرض ليكون متناسبًا */
+    max-width: 300px;
+    /* تحديد أقصى عرض */
+    box-sizing: border-box;
+}
+
+button {
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#output {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    color: #555;
+    font-size: 18px;
+    width: 80%;
+    /* تعديل العرض ليكون متناسبًا */
+    max-width: 300px;
+    /* تحديد أقصى عرض */
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    text-align: center;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@media (max-width: 600px) {
+
+    label,
+    button,
+    input,
+    #output {
+        font-size: 14px;
+        padding: 8px;
+        margin: 8px 0;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+
+    label,
+    button,
+    input,
+    #output {
+        font-size: 16px;
+        padding: 10px;
+        margin: 10px 0;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+}
+
+@media (min-width: 1025px) {
+
+    label,
+    button,
+    input,
+    #output {
+        font-size: 18px;
+        padding: 12px;
+        margin: 12px 0;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+}

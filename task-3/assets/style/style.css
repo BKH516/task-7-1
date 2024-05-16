@@ -1,0 +1,88 @@
+body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(270deg, #ff512f, #dd2476, #405de6);
+      background-size: 600% 600%;
+      animation: AnimationName 16s ease infinite;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+}
+
+#container {
+      text-align: center;
+      background: linear-gradient(270deg, #24c6dc, #514a9d);
+      background-size: 600% 600%;
+      animation: AnimationNameContainer 10s ease infinite;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 90%;
+      max-width: 600px;
+}
+
+input,
+button {
+      padding: 10px;
+      margin: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      width: calc(50% - 22px);
+}
+
+button {
+      cursor: pointer;
+      background-color: #0056b3;
+      color: white;
+      border: none;
+}
+
+button:hover {
+      background-color: #004494;
+}
+
+table {
+      width: 100%;
+      margin-top: 20px;
+      border-collapse: collapse;
+}
+
+td,
+th {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: center;
+}
+
+th {
+      background-color: #f0f0f0;
+}
+
+@keyframes AnimationName {
+      0% {
+            background-position: 0% 50%
+      }
+
+      50% {
+            background-position: 100% 50%
+      }
+
+      100% {
+            background-position: 0% 50%
+      }
+}
+
+@keyframes AnimationNameContainer {
+      0% {
+            background-position: 0% 50%
+      }
+
+      50% {
+            background-position: 100% 50%
+      }
+
+      100% {
+            background-position: 0% 50%
+      }
+}

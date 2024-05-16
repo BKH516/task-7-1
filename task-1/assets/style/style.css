@@ -1,0 +1,99 @@
+body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100vw;
+      min-height: 100vh;
+      margin: 0;
+    background-color: gray;
+      padding: 20px; /* إضافة تبطين للجسم لتحسين المظهر على الشاشات الصغيرة */
+      overflow: hidden;
+  }
+  
+  section {
+      display: flex;
+      flex-direction: column; /* تغيير الاتجاه إلى العمودي لتنظيم المحتوى بشكل أفضل */
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 90%; /* بداية بعرض أكبر للتكيف مع محتوى القسم */
+      max-width: 500px; /* تحديد العرض الأقصى للقسم */
+      border-radius: 25px;
+      box-shadow: 0px 0px 10px 1px black;
+      background-image: linear-gradient(to right, blue, indigo, violet);
+      padding: 20px; /* إضافة تبطين داخلي للقسم */
+  }
+  
+  div input {
+      border: none;
+      width: 80%; /* زيادة العرض لتحسين القراءة والإدخال */
+      padding: 10px; /* إضافة تبطين لتحسين الشكل */
+      margin-top: 10px; /* إضافة هامش علوي للفصل بين عناصر الإدخال */
+  }
+  
+  div input:focus {
+      background-image: linear-gradient(to right, blue, violet);
+      box-shadow: inset 0 0 15px 2px black;
+      color: aliceblue;
+      outline: none;
+  }
+  
+  button {
+      padding: 10px 20px;
+      margin-top: 20px;
+      width: auto;
+      background-color: indigo;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, box-shadow 0.3s ease; /* إضافة تأثير انتقالي للون الخلفية والظل */
+  }
+  
+  button:hover {
+      background-color: violet; /* تغيير لون الخلفية عند تمرير الماوس */
+      box-shadow: 0 0 20px 3px rgba(255, 255, 255, 0.6); /* إضافة ظل أكثر وضوحاً */
+  }
+  
+  .result-display {
+      padding: 10px;
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-top: 20px;
+      color: #333;
+      font-size: 16px;
+  }
+  
+  .max {
+      color: green;
+      font-weight: bold;
+  }
+  
+  .min {
+      color: red;
+      font-weight: bold;
+  }
+
+  /* استعلامات الوسائط لتحسين التجاوبية */
+
+
+  @media (max-width: 768px) {
+    body {
+        padding: 10px; /* تقليل التبطين للجسم لتوفير مساحة أكبر */
+    }
+
+    section {
+        width: 100%; /* يأخذ القسم العرض الكامل في الأجهزة الصغيرة */
+        padding: 10px; /* تقليل التبطين للقسم */
+        box-shadow: 0px 0px 5px 0px black; /* تقليل حجم الظل لتناسب الشاشات الصغيرة */
+    }
+
+    div input {
+        width: 100%; /* زيادة العرض لتحسين القراءة والإدخال على الشاشات الصغيرة */
+    }
+
+    button {
+        width: 100%; /* جعل الزر يأخذ العرض الكامل لتسهيل النقر */
+    }
+}

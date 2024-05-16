@@ -1,0 +1,82 @@
+<html>
+<head>
+    <title>tasks</title>
+    <style>
+        body {
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+            background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+        }
+        .button-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+            gap: 10px;
+            width: 90%;
+            max-width: 600px;
+        }
+        button {
+            padding: 10px;
+            font-size: 16px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif ;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        button:hover {
+            background-color: #007BFF;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+        }
+
+        @media (max-width: 600px) {
+            button {
+                font-size: 25px;
+                padding: 18px;
+            }
+        }
+    
+
+        @media (min-width: 601px) and (max-width: 1200px) {
+            .button-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            button {
+                font-size: 35px;
+                padding: 20px;
+            }
+
+        }
+    
+
+        @media (min-width: 1201px) {
+            .button-container {
+                width: 15%;
+            }
+            button {
+                font-size: 35px;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <a href="./task-1/index.html"><button>Task-1</button></a>
+        <a href="./task-2/index.html"><button>Task-2</button></a>
+        <a href="./task-3/index.html"><button>Task-3</button></a>
+        <a href="./task-4/index.html"><button>Task-4</button></a>
+        <a href="./task-5/index.html"><button>Task-5</button></a>
+        <a href="./task-6/index.html"><button>Task-6</button></a>
+    </div>
+</body>
+</html>
